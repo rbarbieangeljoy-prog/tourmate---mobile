@@ -1,0 +1,66 @@
+/* Tailwind CSS v4 - Import theme */
+@import "tailwindcss";
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Custom theme configuration */
+@theme {
+  /* Custom colors */
+  --color-primary: #0c3437;
+  --color-primary-dark: #163a43;
+  --color-primary-light: #1f4f5a;
+  --color-accent-yellow: #ffb400;
+  --color-accent-green: #32bd37;
+  
+  /* Font family */
+  --font-poppins: 'Poppins', sans-serif;
+  
+  /* Custom breakpoints */
+  --breakpoint-mobile: 480px;
+}
+
+/* Global base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-poppins);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+/* Custom utility classes */
+@utility bg-primary {
+  background-color: var(--color-primary);
+}
+
+@utility bg-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+
+@utility text-primary {
+  color: var(--color-primary);
+}
+
+@utility border-primary {
+  border-color: var(--color-primary);
+}
+
+@utility btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  transition: all 0.2s;
+  box-shadow: 0 10px 25px rgba(12, 52, 55, 0.2);
+}
+
+@utility btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}

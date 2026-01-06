@@ -1,7 +1,8 @@
-import './assets/main.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+
+// Import CSS (v4 style)
+import './index.css'
 
 import App from './App.vue'
 import router from './router'
